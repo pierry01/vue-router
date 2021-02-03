@@ -3,10 +3,12 @@
     <h1>Rotas com Vue Router</h1>
 
     <RouterView name="menu" />
+
     <transition mode="out-in" name="flip">
       <RouterView />
     </transition>
-    <!-- <RouterView name="menuInferior" /> -->
+
+    <RouterView name="menuInferior" />
   </div>
 </template>
 
