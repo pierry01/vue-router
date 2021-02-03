@@ -119,3 +119,12 @@ button {
 .flip-leave-active {
   animation: flip-out 0.3s ease;
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+}
