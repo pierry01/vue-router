@@ -46,6 +46,10 @@ export default new Router({
           name: 'editarUsuario'
         },
       ]
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
   ]
 })
