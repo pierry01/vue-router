@@ -2,9 +2,17 @@
   <div class="usuario-lista">
     <h3>Lista de Usuários</h3>
     <ul class="lista">
-      <li class="item-lista">Usuário 1</li>
-      <li class="item-lista">Usuário 2</li>
-      <li class="item-lista">Usuário 3</li>
+      <RouterLink tag="li" to="/usuario/1" class="item-lista">
+        Usuário 1
+      </RouterLink>
+
+      <RouterLink tag="li" to="/usuario/2" class="item-lista">
+        Usuário 2
+      </RouterLink>
+
+      <RouterLink tag="li" to="/usuario/3" class="item-lista">
+        Usuário 3
+      </RouterLink>
     </ul>
   </div>
 </template>

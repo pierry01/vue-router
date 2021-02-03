@@ -1,8 +1,11 @@
 <template>
   <div class="usuario-detalhe">
     <h3>Usuário Detalhe</h3>
-    <hr />
     <p><strong>Código: </strong>{{ id }}</p>
+
+    <RouterLink tag="button" primario :to="`/usuario/${id}/editar`">
+      Editar
+    </RouterLink>
   </div>
 </template>
 
