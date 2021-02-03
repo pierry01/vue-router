@@ -3,7 +3,14 @@
     <h3>Usuário Detalhe</h3>
     <p><strong>Código: </strong>{{ id }}</p>
 
-    <RouterLink tag="button" primario :to="`/usuario/${id}/editar`">
+    <RouterLink
+      tag="button"
+      primario
+      :to="{
+        name: 'editarUsuario',
+        params: { id: id },
+      }"
+    >
       Editar
     </RouterLink>
   </div>

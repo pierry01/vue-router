@@ -14,16 +14,29 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Inicio
+      component: Inicio,
+      name: 'inicio'
     },
     {
       path: '/usuario/',
       component: Usuario,
       props: true,
       children: [
-        { path: '', component: UsuarioLista },
-        { path: ':id', component: UsuarioDetalhe, props: true },
-        { path: ':id/editar', component: UsuarioEditar, props: true },
+        {
+          path: '',
+          component: UsuarioLista
+        },
+        {
+          path: ':id',
+          component: UsuarioDetalhe,
+          props: true
+        },
+        {
+          path: ':id/editar',
+          component: UsuarioEditar,
+          props: true,
+          name: 'editarUsuario'
+        },
       ]
     }
   ]
