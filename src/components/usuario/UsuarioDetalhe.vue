@@ -9,6 +9,7 @@
       :to="{
         name: 'editarUsuario',
         params: { id: id },
+        query: { completo: true, lingua: 'pt-BR' },
       }"
     >
       Editar
