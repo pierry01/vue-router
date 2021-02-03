@@ -3,12 +3,13 @@ import Router from 'vue-router'
 import Inicio from './components/Inicio'
 import Menu from './components/template/Menu'
 import MenuAlternativo from './components/template/MenuAlternativo'
-import Usuario from './components/usuario/Usuario'
-import UsuarioLista from './components/usuario/UsuarioLista'
-import UsuarioDetalhe from './components/usuario/UsuarioDetalhe'
-import UsuarioEditar from './components/usuario/UsuarioEditar'
 
 Vue.use(Router)
+
+const Usuario = () => import('./components/usuario/Usuario')
+const UsuarioLista = () => import('./components/usuario/UsuarioLista')
+const UsuarioDetalhe = () => import('./components/usuario/UsuarioDetalhe')
+const UsuarioEditar = () => import('./components/usuario/UsuarioEditar')
 
 const router = new Router({
   mode: 'history',
