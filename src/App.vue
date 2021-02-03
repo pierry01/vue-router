@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Rotas com VueRouter</h1>
+    <h1>Rotas com Vue Router</h1>
     <Menu />
     <RouterView />
   </div>

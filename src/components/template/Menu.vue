@@ -1,7 +1,14 @@
 <template>
   <nav class="menu">
-    <RouterLink to="/">Início</RouterLink>
-    <RouterLink to="/usuario">Usuário</RouterLink>
+    <ul>
+      <RouterLink to="/" tag="li" active-class="active" exact>
+        <a>Início</a>
+      </RouterLink>
+
+      <RouterLink to="/usuario" tag="li" active-class="active">
+        <a>Usuário</a>
+      </RouterLink>
+    </ul>
   </nav>
 </template>
 
