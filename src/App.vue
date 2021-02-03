@@ -1,17 +1,14 @@
 <template>
   <div id="app">
     <h1>Rotas com Vue Router</h1>
-    <Menu />
+    <RouterView name="menu" />
     <RouterView />
+    <RouterView name="menuInferior" />
   </div>
 </template>
 
 <script>
-import Menu from "./components/template/Menu";
-
-export default {
-  components: { Menu },
-};
+export default {};
 </script>
 
 <style>
