@@ -10,7 +10,7 @@ import UsuarioEditar from './components/usuario/UsuarioEditar'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
@@ -46,7 +46,12 @@ export default new Router({
         {
           path: ':id',
           component: UsuarioDetalhe,
-          props: true
+          props: true,
+          beforeEnter: (to, from, next) => {
+            // eslint-disable-next-line
+            console.log('Antes da rota -> USUÁRIO DETALHE')
+            next()
+          }
         },
         {
           path: ':id/editar',
@@ -62,3 +67,11 @@ export default new Router({
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  // eslint-disable-next-line
+  console.log('Antes das rotas - GLOBAL')
+  next()
+})
+
+export default router
