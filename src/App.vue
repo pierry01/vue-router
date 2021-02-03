@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <h1>Rotas com Vue Router</h1>
+
     <RouterView name="menu" />
-    <RouterView />
-    <RouterView name="menuInferior" />
+    <transition mode="out-in" name="flip">
+      <RouterView />
+    </transition>
+    <!-- <RouterView name="menuInferior" /> -->
   </div>
 </template>
 
