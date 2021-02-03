@@ -5,8 +5,12 @@
         <a>Início</a>
       </RouterLink>
 
-      <RouterLink to="/usuario" tag="li" active-class="active">
-        <a>Usuário</a>
+      <RouterLink to="/usuario/1" tag="li" active-class="active">
+        <a>Usuário 1</a>
+      </RouterLink>
+
+      <RouterLink to="/usuario/2" tag="li" active-class="active">
+        <a>Usuário 2</a>
       </RouterLink>
     </ul>
   </nav>
