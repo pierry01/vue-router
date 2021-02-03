@@ -9,13 +9,14 @@
   },
   "dependencies": {
     "bootstrap-vue": "^2.21.2",
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-router": "3.0.2"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.0.0-beta.53",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.2.1",
-    "@vue/cli-service": "^3.2.0",
+    "@vue/cli-service": "^4.5.11",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
